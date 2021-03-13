@@ -47,29 +47,112 @@
 
 // }
 
-let num = 50;
+// let num = 50;
 // while (num < 60) {
 //     console.log(num);
 //     num++;
 // }
 
-do {
-    console.log(num);
-    num++;
-}
-while (num < 60);
+// do {
+//     console.log(num);
+//     num++;
+// }
+// while (num < 60);
 
-for (i = 1; i < 8; i++) {
-    console.log(i);
+// for (i = 1; i < 8; i++) {
+//     console.log(i);
 
-}
+// }
 
-for (i = 1; i < 8; i++) {
-    if (i == 6) {
-        continue;
-        // break;
+// for (i = 1; i < 8; i++) {
+//     if (i == 6) {
+//         continue;
+//         // break;
+
+//     }
+//     console.log(i);
+
+// }
+
+let money, time, appData;
+money = +prompt("Ваш бюджет на месяц?", '');
+time = prompt("Введите дату в формате YYYY-MM-DD", '');
+alert(money + " На " + time);
+appData = { budget: money, timeData: time, expenses: {}, optionalExpenses: {}, income: [], moneyPerDay: {}, saving: false };
+
+
+// Используем цикл WHILE
+
+// let i = 0;
+// while (i < 2) {
+//     let a = prompt("Введите обязательную статью расходов в этом месяце", ""),
+//         b = prompt("Во сколько обойдется?", "");
+
+//     if (typeof(a) === 'string' && typeof(a) != null && typeof(b) != null && a != "" && b != "" && a.length < 50) {
+
+//         console.log("done");
+
+//         appData.expenses[a] = b;
+//     } else {
+//         console.log("bad result");
+//         i--;
+//     }
+
+//     i++;
+// }
+
+// Используем цикл DO...WHILE
+
+// let i = 0;
+// do {
+//     let a = prompt("Введите обязательную статью расходов в этом месяце", ""),
+//         b = prompt("Во сколько обойдется?", "");
+
+//     if (typeof(a) === 'string' && typeof(a) != null && typeof(b) != null && a != "" && b != "" && a.length < 50) {
+
+//         console.log("done");
+
+//         appData.expenses[a] = b;
+//     } else {
+//         console.log("bad result");
+//         i--;
+//     }
+
+//     i++;
+// }
+// while (i < 2);
+
+
+for (let i = 0; i < 2; i++) {
+    let exp1 = prompt("Введите обязательную статью расходов в этом месяце", " "),
+        exp2 = +prompt("Во сколько обойдется ? ", " ");
+
+    if ((typeof(exp1)) === 'string' && (typeof(exp1)) != null && (typeof(exp2)) != null &&
+        exp1 != '' && exp2 != '' && exp1.length < 50) {
+        console.log('done');
+        appData.expenses[exp1] = exp2;
+    } else {
+        console.log('Плохой ресультать');
+        i--;
 
     }
-    console.log(i);
 
+};
+
+
+
+appData.moneyPerDay = appData.budget / 30;
+
+alert('Бюджет еженевно составляет:' + appData.moneyPerDay);
+
+if (appData.moneyPerDay < 500) {
+    console.log('Низкий уровен доставка');
+} else if (appData.moneyPerDay > 500 && appData.moneyPerDay < 2500) {
+    console.log('Средный уровень доставка');
+
+} else if (appData.moneyPerDay > 2500) {
+    console.log('хороший уровень доставки');
+
+} else {
+    console.log('Произошла какая то ощибка');
 }
