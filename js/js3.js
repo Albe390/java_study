@@ -44,3 +44,29 @@ let twelve = "12.12px";
 // console.log(Math.round(twelve));
 console.log(parseInt(twelve));
 console.log(parseFloat(twelve));
+
+// function callback 
+
+function first() {
+    setTimeout(function() {
+        console.log(1);
+    }, 500);
+}
+
+function second() {
+    console.log(2);
+}
+first();
+second();
+
+function learJs(lang, callback) {
+    console.log('Я jochy ' + lang);
+    callback();
+}
+// learJs('учить Java Script', function() {
+//     console.log('Я прошел 3ти урок');
+// });
+function done() {
+    console.log('Я прошел 3ти урок')
+}
+learJs('учить Java Script', done);
