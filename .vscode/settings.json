@@ -1,0 +1,8 @@
+{
+    "liveServer.settings.port": 5501,
+    "terminal.integrated.allowMnemonics": true,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.confirmOnExit": true,
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.experimentalUseTitleEvent": true
+}
