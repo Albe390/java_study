@@ -46,15 +46,15 @@ let btn = document.querySelectorAll('button'),
 //     console.log('an event occurred ' + event.type + ' in the element ' + event.target);
 
 // });
-// link.addEventListener('click', function(event) {
-//     event.preventDefault();
+link.addEventListener('click', function(event) {
+            event.preventDefault();
 
-//     console.log('an event occurred ' + event.type + ' in the element ' + event.target);
+            //     console.log('an event occurred ' + event.type + ' in the element ' + event.target);
 
-// });
+            // });
 
-btn.forEach(function(item) {
-    item.addEventListener('mouseleave', function() {
-        console.log('exited');
-    });
-});
+            btn.forEach(function(item) {
+                item.addEventListener('mouseleave', function() {
+                    console.log('exited');
+                });
+            });
