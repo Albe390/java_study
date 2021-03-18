@@ -1,7 +1,31 @@
+.boxes {
+    display: flex;
+    width: 750px;
+    height: auto;
+    border: 2px solid #5900ff;
+}
+
 .box {
-    width: 150px;
-    height: 150px;
+    width: 500px;
+    height: auto;
     background-color: red;
+    font-size: 25px;
+    color: #fff;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+    border: 15px solid #867307;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#botones {
+    display: block;
+    width: 650px;
+    height: 50px;
+    border: 2px solid #5900ff;
+    background: #817f7f;
+    align-items: center;
 }
 
 button {
