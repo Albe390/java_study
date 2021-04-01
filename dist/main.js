@@ -1,0 +1,1 @@
+(()=>{let o=new(requiere("./script"));console.log(o.hello()),console.log(o.goodbay())})();

@@ -1,0 +1,23 @@
+{
+  "name": "js_study",
+  "version": "1.0.0",
+  "description": "npm install webpack webpack-cli --save-dev",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Albe390/java_study.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Albe390/java_study/issues"
+  },
+  "homepage": "https://github.com/Albe390/java_study#readme",
+  "devDependencies": {
+    "webpack": "^5.27.2",
+    "webpack-cli": "^4.5.0"
+  }
+}

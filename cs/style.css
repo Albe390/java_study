@@ -28,7 +28,16 @@
     align-items: center;
 }
 
-button {
+.list {
+    display: block;
+    width: 850px;
+    height: 50px;
+    border: 2px solid #5900ff;
+    background: #817f7f;
+    align-items: center;
+}
+
+.list-item {
     width: 80px;
     height: 30px;
     margin-top: 10px;
@@ -38,6 +47,32 @@ button {
     color: #fff;
     cursor: pointer;
     outline: none;
+}
+
+
+/* button {
+    width: 80px;
+    height: 30px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+} */
+
+.wrapper {
+    display: flex;
+    width: auto;
+    /* height: 340px; */
+    border: 2px solid #5900ff;
+}
+
+img {
+    width: 30%;
+    padding: 10px;
+    border: 15px solid #867307;
 }
 
 .circle {
